@@ -1,0 +1,80 @@
+// white color
+$color-white-1: #fff;
+
+// black color
+$color-black-1: rgb(49, 49, 49);
+$color-black-2: rgba(112, 110, 112, 0.7);
+$color-black-3: rgba(71, 70, 71, 0.7);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Exo', sans-serif;
+    letter-spacing: .02rem;
+    color: $color-white-1;
+
+}
+
+body {
+    background-image: url(https://htmldemo.net/bonx/bonx/assets/img/bg/body-bg.webp);
+    background-size: cover;
+    background-color: #140e38;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: $color-black-1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    .header__logo {
+        a {
+            display: flex;
+            text-decoration: none;
+            width: 30%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .header__menu nav {
+        ul {
+            display: flex;
+            margin-top: 1rem;
+            li {
+                list-style: none;
+                margin-right: 57px;
+                a {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $color-white-1;
+                }
+            }
+        }
+    }
+}
+

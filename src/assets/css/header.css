@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 0.02rem;
+  color: #fff;
+}
+
+body {
+  background-image: url(https://htmldemo.net/bonx/bonx/assets/img/bg/body-bg.webp);
+  background-size: cover;
+  background-color: #140e38;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: rgb(49, 49, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.header__content .header__logo a {
+  display: flex;
+  text-decoration: none;
+  width: 30%;
+}
+.header__content .header__logo a img {
+  width: 100%;
+  height: auto;
+}
+.header__content .header__logo a h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__content .header__menu nav ul {
+  display: flex;
+  margin-top: 1rem;
+}
+.header__content .header__menu nav ul li {
+  list-style: none;
+  margin-right: 57px;
+}
+.header__content .header__menu nav ul li a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=header.css.map */
