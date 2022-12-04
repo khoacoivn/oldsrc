@@ -11,7 +11,7 @@ export default class AboutUs extends Component {
           <div className="about__content">
             {/* data-wow-duration: "2s" data-wow-delay: ".2s" */}
             <div className="about__left wow">
-              <img src={aboutImg} alt="about image" />
+              <img src={aboutImg} alt={aboutImg} />
             </div>
             {/* data-wow-duration: "2s" data-wow-delay: ".2s" */}
             <div className="about__right wow">
@@ -19,7 +19,7 @@ export default class AboutUs extends Component {
                 <p>About Us</p>
                 <h2>
                   Build Your <br />
-                  Business Website <br />
+                  Game Website <br />
                   Better
                 </h2>
               </div>

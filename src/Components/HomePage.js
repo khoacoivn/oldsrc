@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import AboutUs from "./HomePages/AboutUs";
 import Banner from "./HomePages/Banner";
+import ClientComment from "./HomePages/ClientComment";
 import Header from "./HomePages/Header";
 import Numbers from "./HomePages/Numbers";
+import PopularGame from "./HomePages/PopularGame";
 import Service from "./HomePages/Service";
 
 export default class HomePage extends Component {
@@ -14,6 +16,8 @@ export default class HomePage extends Component {
         <Service />
         <AboutUs />
         <Numbers />
+        <PopularGame />
+        <ClientComment />
       </div>
     );
   }

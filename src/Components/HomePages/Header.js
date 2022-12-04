@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from "react";
+import React, { PureComponent } from "react";
 import Logo from "../../assets/img/logo1.png";
 import "../../assets/css/header.css";
 import Button from "./Button";
