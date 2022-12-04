@@ -8,4 +8,7 @@
 .testimonial .testimonial__title h2 {
   font-size: 3rem;
   font-weight: 700;
+}
+.testimonial .testimonial__detail {
+  margin-top: 35px;
 }/*# sourceMappingURL=Testimonial.css.map */
