@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import AboutUs from "./HomePages/AboutUs";
 import Banner from "./HomePages/Banner";
+import Blog from "./HomePages/Blog";
 import ClientComment from "./HomePages/ClientComment";
+import ConnectUs from "./HomePages/ConnectUs";
+import Footer from "./HomePages/Footer";
 import Header from "./HomePages/Header";
 import Numbers from "./HomePages/Numbers";
 import PopularGame from "./HomePages/PopularGame";
@@ -18,6 +21,9 @@ export default class HomePage extends Component {
         <Numbers />
         <PopularGame />
         <ClientComment />
+        <Blog />
+        <ConnectUs />
+        <Footer />
       </div>
     );
   }

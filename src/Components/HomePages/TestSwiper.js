@@ -50,13 +50,18 @@ export default class TestSwiper extends Component {
           className="container testimonials__container"
           // install Swiper modules
           modules={[Pagination]}
-          spaceBetween={40}
-          slidesPerView={1}
+          spaceBetween={30}
+          slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
+          freeMode={true}
+          loop={true}
+          autoplay={true}
+          speed={3000}
+          centeredSlides={true}
         >
           {data.map(({ avatar, name, review }, index) => {
             return (
