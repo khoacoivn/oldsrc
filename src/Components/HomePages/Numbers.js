@@ -18,14 +18,14 @@ export default class Numbers extends Component {
             <div className="number__item number2">
               <i className="fa fa-chart-line" />
               <p>
-                <CountUp end={75} duration={5} className="countNumber" /> MI
+                <CountUp end={75} duration={5} className="countNumber " /> MI
               </p>
               <p>Total Games</p>
             </div>
             <div className="number__item number3">
               <i className="fa fa-rocket" />
               <p>
-                <CountUp end={2000} duration={5} className="countNumber" /> MI
+                <CountUp end={2000} duration={5} className="countNumber " /> MI
               </p>
               <p>Youtube Streams</p>
             </div>

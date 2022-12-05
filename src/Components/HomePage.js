@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AboutUs from "./HomePages/AboutUs";
+import MoveToTop from "./HomePages/MoveToTop";
 import Banner from "./HomePages/Banner";
 import Blog from "./HomePages/Blog";
 import ClientComment from "./HomePages/ClientComment";
@@ -24,6 +25,7 @@ export default class HomePage extends Component {
         <Blog />
         <ConnectUs />
         <Footer />
+        <MoveToTop />
       </div>
     );
   }

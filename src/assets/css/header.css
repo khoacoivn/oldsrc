@@ -6,13 +6,13 @@
   font-weight: 400;
   font-family: "Exo", sans-serif;
   letter-spacing: 0.02rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 body {
   background-image: url(../img/body-bg.webp);
   background-size: cover;
-  background-color: #140e38;
+  background-color: rgba(71, 70, 71, 0.7);
 }
 
 .container {
@@ -53,12 +53,20 @@ body {
 }
 .header__content .header__menu nav ul li {
   list-style: none;
-  margin-right: 57px;
+  padding: 10px 30px;
+  transition: all 0.2s;
 }
 .header__content .header__menu nav ul li a {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
+}
+.header__content .header__menu nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 9px;
+}
+.header__content .header__menu nav ul li:hover a {
+  color: rgba(71, 70, 71, 0.7);
 }/*# sourceMappingURL=header.css.map */
