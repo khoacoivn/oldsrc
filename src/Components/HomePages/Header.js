@@ -19,46 +19,58 @@ export default class Header extends PureComponent {
 
             <div className="header__menu">
               <nav>
-                <ul>
+                <ul className="d-flex">
                   <li>
                     <NavLink to={`/`}>
-                      <a href="#">Home</a>
+                      <a href="#" className="mainPages">
+                        Home
+                      </a>
                     </NavLink>
                   </li>
+
                   <li>
-                    <a href="#">Pages</a>
+                    <a href="#" className="mainPages">
+                      Pages
+                    </a>
                     <ul class="sub_menu">
-                      <li>
-                        <a href="about.html">About Us</a>
+                      <li className="sub__pages">
+                        <a href="#">About Us</a>
                       </li>
-                      <li>
-                        <a href="all-game.html">All Game</a>
+                      <li className="sub__pages">
+                        <a href="#">All Game</a>
                       </li>
-                      <li>
-                        <a href="game-details.html">Game Details</a>
+                      <li className="sub__pages">
+                        <a href="#">Game Details</a>
                       </li>
-                      <li>
-                        <a href="faq.html">Faq Page</a>
+                      <li className="sub__pages">
+                        <a href="#">Players</a>
                       </li>
-                      <li>
-                        <a href="players.html">Players</a>
+                      <li className="sub__pages">
+                        <a href="#">Player Details</a>
                       </li>
-                      <li>
-                        <a href="player-details.html">Player Details</a>
+                      <li className="sub__pages">
+                        <NavLink to="/signup">
+                          <a href="#">Sign Up</a>
+                        </NavLink>
                       </li>
-                      <li>
-                        <a href="registration.html">Sign Up</a>
-                      </li>
-                      <li>
-                        <a href="login.html">Login</a>
+                      <li className="sub__pages">
+                        <NavLink to="/signin">
+                          <a href="#">Login</a>
+                        </NavLink>
                       </li>
                     </ul>
                   </li>
+
                   <li>
-                    <a href="#">Blogs</a>
+                    <a href="#" className="mainPages">
+                      Blogs
+                    </a>
                   </li>
+
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="#" className="mainPages">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </nav>
