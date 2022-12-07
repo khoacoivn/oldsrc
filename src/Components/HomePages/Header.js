@@ -26,7 +26,33 @@ export default class Header extends PureComponent {
                     </NavLink>
                   </li>
                   <li>
-                    <a href="#">Match</a>
+                    <a href="#">Pages</a>
+                    <ul class="sub_menu">
+                      <li>
+                        <a href="about.html">About Us</a>
+                      </li>
+                      <li>
+                        <a href="all-game.html">All Game</a>
+                      </li>
+                      <li>
+                        <a href="game-details.html">Game Details</a>
+                      </li>
+                      <li>
+                        <a href="faq.html">Faq Page</a>
+                      </li>
+                      <li>
+                        <a href="players.html">Players</a>
+                      </li>
+                      <li>
+                        <a href="player-details.html">Player Details</a>
+                      </li>
+                      <li>
+                        <a href="registration.html">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="login.html">Login</a>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <a href="#">Blogs</a>

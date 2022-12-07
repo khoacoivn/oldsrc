@@ -55,6 +55,7 @@ body {
   list-style: none;
   padding: 10px 30px;
   transition: all 0.2s;
+  position: relative;
 }
 .header__content .header__menu nav ul li a {
   font-size: 1rem;
@@ -69,6 +70,24 @@ body {
 }
 .header__content .header__menu nav ul li:hover a {
   color: rgba(71, 70, 71, 0.7);
+}
+
+.header__menu li ul.sub_menu {
+  position: absolute;
+  min-width: 225px;
+  padding: 18px 20px;
+  background: #ffffff;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: auto;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  z-index: 99;
+  top: 148%;
+  text-align: left;
+  border-radius: 4px;
 }
 
 .signIn__title {
