@@ -105,6 +105,7 @@ ul.sub_menu .sub__pages a {
   color: rgb(49, 49, 49);
 }
 ul.sub_menu .sub__pages a:hover {
+  text-decoration: none;
   color: rgba(147, 64, 241, 0.8);
 }
 

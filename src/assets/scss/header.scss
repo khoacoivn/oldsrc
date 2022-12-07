@@ -125,6 +125,7 @@ ul.sub_menu {
             text-transform: capitalize;
             color: $color-black-1;
             &:hover {
+                text-decoration: none;
                 color: $purple-color-1;
             }
         }
