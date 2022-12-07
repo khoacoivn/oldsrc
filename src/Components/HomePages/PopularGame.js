@@ -8,7 +8,7 @@ export default class PopularGame extends Component {
       <section className="popularGame">
         <div className="container">
           <div className="popularGame__content">
-            <div className="popularGame__title">
+            <div className="popularGame__title text-center">
               <h2>POPULAR GAME</h2>
               <p>
                 When unknown printer took type and scrambled it to make <br />

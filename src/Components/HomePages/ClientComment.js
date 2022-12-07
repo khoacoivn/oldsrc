@@ -5,7 +5,7 @@ import "../../assets/css/Testimonial.css";
 export default class ClientComment extends Component {
   render() {
     return (
-      <section className="testimonial">
+      <section className="testimonial text-center">
         <div className="container">
           <div className="testimonial__content">
             <div className="testimonial__title">

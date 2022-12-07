@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 0.02rem;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-image: url(../img/body-bg.webp);
+  background-size: cover;
+  background-color: rgba(71, 70, 71, 0.7);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  background: rgb(49, 49, 49);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.header__content .header__logo a {
+  display: flex;
+  text-decoration: none;
+  width: 30%;
+}
+.header__content .header__logo a img {
+  width: 100%;
+  height: auto;
+}
+.header__content .header__logo a h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__content .header__menu nav ul {
+  display: flex;
+  margin-top: 1rem;
+}
+.header__content .header__menu nav ul li {
+  list-style: none;
+  padding: 10px 30px;
+  transition: all 0.2s;
+}
+.header__content .header__menu nav ul li a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.header__content .header__menu nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 9px;
+}
+.header__content .header__menu nav ul li:hover a {
+  color: rgba(71, 70, 71, 0.7);
+}
+
+.signIn__title {
+  background-image: url(https://htmldemo.net/bonx/bonx/assets/img/bg/breadcrumbs-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.signIn__title h1 {
+  font-size: 90px;
+  line-height: 90px;
+  font-family: "Metal Mania", cursive;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 0px rgb(155, 125, 175);
+}
+
+ul.location {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.location li {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-right: 5px;
+  color: rgb(155, 125, 175);
+}
+ul.location li:first-child a {
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul.location li:first-child a:hover {
+  color: rgb(155, 125, 175);
+  text-decoration: none;
+}
+
+.signIn__content {
+  margin-bottom: 120px;
+}
+.signIn__content .content__left img {
+  max-width: 100%;
+  height: auto;
+}
+.signIn__content .content__right .section_title {
+  margin-bottom: 60px;
+}
+.signIn__content .content__right .section_title h2 {
+  font-size: 3.5rem;
+  line-height: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.signIn__content .content__right .form_input {
+  margin-bottom: 30px;
+}
+.signIn__content .content__right .form_input input {
+  display: inline-block;
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  line-height: 17px;
+  border-radius: 10px;
+  background: inherit;
+  border: 2px solid rgba(33, 27, 54, 0.8);
+  color: #FFFFFF;
+  transition: all 1s ease 0s;
+}
+.signIn__content .content__right .form_input input:focus {
+  outline: none;
+  border-color: rgba(150, 63, 207, 0.5);
+}
+.signIn__content .content__right .form_input_btn {
+  margin-bottom: 40px;
+}
+.signIn__content .content__right .form_input_btn #signIn_Btn {
+  width: 50%;
+  height: auto;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.signIn__content .content__right .form_input_btn #signIn_Btn:hover {
+  text-decoration: none;
+}
+.signIn__content .content__right p.dontHaveAccount {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+.signIn__content .content__right p.dontHaveAccount a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+}
+.signIn__content .content__right p.dontHaveAccount a:hover {
+  color: rgba(150, 63, 207, 0.5);
+}/*# sourceMappingURL=SignIn.css.map */

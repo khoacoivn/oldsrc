@@ -1,11 +1,16 @@
 import React from "react";
-import "./App.css";
-import HomePage from "./Components/HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import MainRouter from "./Components/MainRouter";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <BrowserRouter>
+        <ScrollToTop>
+          <MainRouter />
+        </ScrollToTop>
+      </BrowserRouter>
     </div>
   );
 }

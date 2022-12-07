@@ -5,7 +5,7 @@ import "../../assets/css/blog.css";
 export default class Blog extends Component {
   render() {
     return (
-      <section className="blog">
+      <section className="blog text-center">
         <div className="container">
           <div className="blog__content">
             <div className="blog__title">

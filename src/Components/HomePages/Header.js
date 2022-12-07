@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from "../../assets/img/logo1.png";
 import "../../assets/css/header.css";
 import Button from "./Button";
@@ -20,7 +21,9 @@ export default class Header extends PureComponent {
               <nav>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <NavLink to={`/`}>
+                      <a href="#">Home</a>
+                    </NavLink>
                   </li>
                   <li>
                     <a href="#">Match</a>
@@ -35,7 +38,9 @@ export default class Header extends PureComponent {
               </nav>
             </div>
 
-            <Button value="Sign Up" id="btnSignUp" />
+            <NavLink to="/signup">
+              <Button value="Sign Up" id="btnSignUp" />
+            </NavLink>
           </div>
         </div>
       </header>
