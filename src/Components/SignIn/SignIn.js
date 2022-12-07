@@ -3,27 +3,14 @@ import { NavLink } from "react-router-dom";
 import Button from "../HomePages/Button";
 import "../../assets/css/SignIn.css";
 import signInImage from "../../assets/img/signUp.webp";
+import LocationHeader from "../SignUp/LocationHeader";
 
 export default class SignIn extends Component {
   render() {
     return (
       <div className="signIn">
-        <div className="signIn__title text-center">
-          <div className="container pt-5">
-            <h1>Sign In</h1>
-            <ul className="location d-flex justify-content-center">
-              <li>
-                <NavLink to="/">
-                  <a href="#">Home</a>
-                </NavLink>
-              </li>
-              <li>
-                <span>//</span>
-              </li>
-              <li>Pages</li>
-            </ul>
-          </div>
-        </div>
+        <LocationHeader title="Sign In" location="Pages" />
+
         <div className="container">
           <div className="signIn__content row justify-content-between align-items-center">
             <div className="content__left col-lg-6 col-md-8 col-12 mx-auto mb-50">
