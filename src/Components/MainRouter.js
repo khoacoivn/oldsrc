@@ -7,6 +7,7 @@ import Footer from "./HomePages/Footer";
 import MoveToTop from "./HomePages/MoveToTop";
 import SignUp from "./SignUp/SignUp";
 import SignIn from "./SignIn/SignIn";
+import Players from "./Players/Players";
 
 const MainRouter = () => (
   <div>
@@ -15,6 +16,7 @@ const MainRouter = () => (
       <Route exact path="/" component={HomePage} />
       <Route path="/signup" component={SignUp} />
       <Route path="/signin" component={SignIn} />
+      <Route path="/players" component={Players} />
     </Switch>
     <Footer />
     <MoveToTop />
