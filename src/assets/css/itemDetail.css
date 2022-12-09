@@ -85,7 +85,7 @@
 .item__right p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #f3f3f3;
+  color: #FFFFFF;
   margin-bottom: 20px;
 }
 .item__right #btnDetail {
@@ -109,7 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #fff;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
   color: #FFFFFF;
 }
@@ -132,5 +132,5 @@
 }
 .item__right .social-link a:hover:nth-child(3) {
   text-decoration: none;
-  background-color: #3fa2e4;
+  background-color: #48ade7;
 }/*# sourceMappingURL=itemDetail.css.map */
