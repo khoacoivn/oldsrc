@@ -9,7 +9,7 @@ export default class SignIn extends Component {
   render() {
     return (
       <div className="signIn">
-        <LocationHeader title="Sign In" location="Pages" />
+        <LocationHeader title={"Sign In"} location={"Pages"} />
 
         <div className="container">
           <div className="signIn__content row justify-content-between align-items-center">

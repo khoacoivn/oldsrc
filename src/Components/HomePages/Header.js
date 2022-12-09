@@ -42,19 +42,25 @@ export default class Header extends PureComponent {
                       <li className="sub__pages">
                         <a href="#">Game Details</a>
                       </li>
+
                       <li className="sub__pages">
                         <NavLink to="/players">
                           <a href="#">Players</a>
                         </NavLink>
                       </li>
+
                       <li className="sub__pages">
-                        <a href="#">Player Details</a>
+                        <NavLink to="/playerDetail">
+                          <a href="#">Player Details</a>
+                        </NavLink>
                       </li>
+
                       <li className="sub__pages">
                         <NavLink to="/signup">
                           <a href="#">Sign Up</a>
                         </NavLink>
                       </li>
+
                       <li className="sub__pages">
                         <NavLink to="/signin">
                           <a href="#">Login</a>
@@ -79,7 +85,7 @@ export default class Header extends PureComponent {
             </div>
 
             <NavLink to="/signup">
-              <Button value="Sign Up" id="btnSignUp" />
+              <Button value={"Sign Up"} id={"btnSignUp"} />
             </NavLink>
           </div>
         </div>

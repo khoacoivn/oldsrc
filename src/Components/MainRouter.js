@@ -8,6 +8,7 @@ import MoveToTop from "./HomePages/MoveToTop";
 import SignUp from "./SignUp/SignUp";
 import SignIn from "./SignIn/SignIn";
 import Players from "./Players/Players";
+import PlayerDetail from "./PlayerDetail/PlayerDetail";
 
 const MainRouter = () => (
   <div>
@@ -17,6 +18,7 @@ const MainRouter = () => (
       <Route path="/signup" component={SignUp} />
       <Route path="/signin" component={SignIn} />
       <Route path="/players" component={Players} />
+      <Route path="/playerDetail" component={PlayerDetail} />
     </Switch>
     <Footer />
     <MoveToTop />

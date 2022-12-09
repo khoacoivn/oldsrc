@@ -19,7 +19,7 @@ export default class Banner extends Component {
                 doloremque ex repellat!
               </p>
             </div>
-            <Button value="Play" id="btnPlay" />
+            <Button value={"Play"} id={"btnPlay"} />
           </div>
         </div>
       </section>
