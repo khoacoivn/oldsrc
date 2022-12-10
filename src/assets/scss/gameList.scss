@@ -34,12 +34,14 @@ $yellow-color-1: #f8ae56;
             left: 0;
             width: 100%;
             height: 100%;
+            border-radius: 35px;
             opacity: 0;
             transition: all .75s;
         }
     }
     &:hover .overplay {
         opacity: 1;
+        border-radius: 35px;
     }
 
     .item__pic1 {
@@ -68,9 +70,7 @@ $yellow-color-1: #f8ae56;
     top: 0;
     left: -100%;
     display: block;
-    background: linear-gradient(to right,
-            $black-color-1 0%,
-            $gray-color-1 100%);
+    background: linear-gradient(to right, $black-color-1 0%, $gray-color-1 100%);
     transform: skewX(-25deg);
     transition: all 0.75s;
 }

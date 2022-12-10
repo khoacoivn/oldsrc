@@ -9,6 +9,7 @@ import SignUp from "./SignUp/SignUp";
 import SignIn from "./SignIn/SignIn";
 import Players from "./Players/Players";
 import PlayerDetail from "./PlayerDetail/PlayerDetail";
+import AllGames from "./AllGames/AllGames";
 
 const MainRouter = () => (
   <div>
@@ -19,6 +20,7 @@ const MainRouter = () => (
       <Route path="/signin" component={SignIn} />
       <Route path="/players" component={Players} />
       <Route path="/playerDetail" component={PlayerDetail} />
+      <Route path="/allGames" component={AllGames} />
     </Switch>
     <Footer />
     <MoveToTop />
