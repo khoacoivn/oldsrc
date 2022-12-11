@@ -10,6 +10,7 @@ import SignIn from "./SignIn/SignIn";
 import Players from "./Players/Players";
 import PlayerDetail from "./PlayerDetail/PlayerDetail";
 import AllGames from "./AllGames/AllGames";
+import AboutUs from "./AboutUs/AboutUs";
 
 const MainRouter = () => (
   <div>
@@ -21,6 +22,7 @@ const MainRouter = () => (
       <Route path="/players" component={Players} />
       <Route path="/playerDetail" component={PlayerDetail} />
       <Route path="/allGames" component={AllGames} />
+      <Route path="/aboutUS" component={AboutUs} />
     </Switch>
     <Footer />
     <MoveToTop />

@@ -34,7 +34,9 @@ export default class Header extends PureComponent {
                     </a>
                     <ul class="sub_menu">
                       <li className="sub__pages">
-                        <a href="#">About Us</a>
+                        <NavLink to="/aboutUS">
+                          <a href="#">About Us</a>
+                        </NavLink>
                       </li>
                       <li className="sub__pages">
                         <NavLink to="/allGames">
