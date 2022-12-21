@@ -25,12 +25,12 @@ export default class AboutUs extends Component {
               </div>
 
               <div className="itemAbout__right col-lg-6 wow">
-                <div className="itemAbout__title">
+                <div className="itemAbout__title" id="about__title">
                   <h5>About us</h5>
                   <h2>Website for all gamers</h2>
                 </div>
 
-                <div className="itemAbout__desc">
+                <div className="itemAbout__desc" id="about__desc">
                   <p>
                     It is a long established fact that a reader will be
                     distracted the readable content of page when looking at it
