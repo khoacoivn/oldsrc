@@ -8,7 +8,7 @@ export default class AboutUs extends Component {
     return (
       <section className="about">
         <div className="container">
-          <div className="about__content">
+          <div id="about__content">
             {/* data-wow-duration: "2s" data-wow-delay: ".2s" */}
             <div className="about__left wow">
               <img src={aboutImg} alt={aboutImg} />

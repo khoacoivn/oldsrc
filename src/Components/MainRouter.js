@@ -11,6 +11,7 @@ import Players from "./Players/Players";
 import PlayerDetail from "./PlayerDetail/PlayerDetail";
 import AllGames from "./AllGames/AllGames";
 import AboutUs from "./AboutUs/AboutUs";
+import ContactForm from "./ContactForm/ContactForm";
 
 const MainRouter = () => (
   <div>
@@ -23,6 +24,7 @@ const MainRouter = () => (
       <Route path="/playerDetail" component={PlayerDetail} />
       <Route path="/allGames" component={AllGames} />
       <Route path="/aboutUS" component={AboutUs} />
+      <Route path="/contactForm" component={ContactForm} />
     </Switch>
     <Footer />
     <MoveToTop />

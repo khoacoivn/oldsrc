@@ -80,17 +80,25 @@ export default class Header extends PureComponent {
                   </li>
 
                   <li>
-                    <a href="#" className="mainPages">
-                      Contact
-                    </a>
+                    <NavLink to="/contactForm">
+                      <a href="#" className="mainPages">
+                        Contact
+                      </a>
+                    </NavLink>
                   </li>
                 </ul>
               </nav>
             </div>
 
-            <NavLink to="/signup">
-              <Button value={"Sign Up"} id={"btnSignUp"} />
-            </NavLink>
+            <div className="d-flex">
+              <NavLink to="/signin" className="pr-3">
+                <Button value={"Sign In"} id={"btnSignIn"} />
+              </NavLink>
+
+              <NavLink to="/signup">
+                <Button value={"Sign Up"} id={"btnSignUp"} />
+              </NavLink>
+            </div>
           </div>
         </div>
       </header>

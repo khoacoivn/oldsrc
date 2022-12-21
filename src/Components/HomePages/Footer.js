@@ -10,8 +10,8 @@ export default class Footer extends PureComponent {
           <div className="footer__bottom row">
             {/* stat item  */}
             <div className="footer__item itemFooter1 col-lg-3 col-md-3 wow">
-              <a href="#">
-                <img src={logo} alt width={80} height={100} />
+              <a href="#" className="flex justify-left items-center">
+                <img src={logo} alt width={70} height={100} />
                 <span>Gaming</span>
               </a>
               <ul className="footer__contact">
