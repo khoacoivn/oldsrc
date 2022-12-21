@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/img/logo1.png";
 import "../../assets/css/header.css";
-import Button from "./Button";
+import UserNav from "./UserNav";
 
 export default class Header extends PureComponent {
   render() {
@@ -90,15 +90,8 @@ export default class Header extends PureComponent {
               </nav>
             </div>
 
-            <div className="d-flex">
-              <NavLink to="/signin" className="pr-3">
-                <Button value={"Sign In"} id={"btnSignIn"} />
-              </NavLink>
-
-              <NavLink to="/signup">
-                <Button value={"Sign Up"} id={"btnSignUp"} />
-              </NavLink>
-            </div>
+            {/* UserNAv  */}
+            <UserNav />
           </div>
         </div>
       </header>

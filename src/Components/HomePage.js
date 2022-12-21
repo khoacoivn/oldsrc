@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AboutUs from "./HomePages/AboutUs";
+import AboutUsHome from "./HomePages/AboutUsHome";
 import Banner from "./HomePages/Banner";
 import Blog from "./HomePages/Blog";
 import ClientComment from "./HomePages/ClientComment";
@@ -14,7 +14,7 @@ export default class HomePage extends Component {
       <div>
         <Banner />
         <Service />
-        <AboutUs />
+        <AboutUsHome />
         <Numbers />
         <PopularGame />
         <ClientComment />

@@ -132,46 +132,79 @@ ul.sub_menu .sub__pages a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.signIn__content .content__right .form_input {
-  margin-bottom: 30px;
-}
-.signIn__content .content__right .form_input input {
-  display: inline-block;
+
+#basic_username {
   width: 100%;
   height: 62px;
   padding: 0 25px;
   line-height: 17px;
-  border-radius: 10px;
+  color: #FFFFFF;
   background: inherit;
-  border: 2px solid rgba(33, 27, 54, 0.8);
+  border: 2px solid rgb(40, 30, 77);
+  border-radius: 10px;
+}
+#basic_username::-moz-placeholder {
   color: #FFFFFF;
-  transition: all 1s ease 0s;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.signIn__content .content__right .form_input input:focus {
-  outline: none;
-  border-color: rgba(150, 63, 207, 0.5);
+#basic_username:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.signIn__content .content__right .form_input_btn {
-  margin-bottom: 40px;
+#basic_username::placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.signIn__content .content__right .form_input_btn #signIn_Btn {
-  width: 50%;
-  height: auto;
+#basic_username:focus {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+
+.ant-input-affix-wrapper {
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  line-height: 17px;
+  background: inherit;
+  border: 2px solid rgb(40, 30, 77);
+  border-radius: 10px;
+}
+.ant-input-affix-wrapper:hover {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+.ant-input-affix-wrapper:focus {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+.ant-input-affix-wrapper #basic_password {
+  background: inherit;
+  color: #FFFFFF;
+}
+.ant-input-affix-wrapper #basic_password::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-input-affix-wrapper #basic_password:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-input-affix-wrapper #basic_password::placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.submit {
+  margin-top: 30px;
+}
+.submit span {
   font-size: 1.7rem;
-  text-decoration: none;
+  font-weight: 600;
 }
-.signIn__content .content__right .form_input_btn #signIn_Btn:hover {
-  text-decoration: none;
-}
-.signIn__content .content__right p.dontHaveAccount {
-  margin-bottom: 0;
-  letter-spacing: 1px;
-}
-.signIn__content .content__right p.dontHaveAccount a {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: all 0.4s ease 0s;
-}
-.signIn__content .content__right p.dontHaveAccount a:hover {
-  color: rgba(150, 63, 207, 0.5);
+
+.ant-btn:hover > span {
+  color: gray;
 }/*# sourceMappingURL=SignIn.css.map */

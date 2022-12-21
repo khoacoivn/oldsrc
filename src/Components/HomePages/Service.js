@@ -14,6 +14,7 @@ export default class Service extends Component {
           <div class="service__content">
             <div class="service__item item1">
               <img
+                className="ml-14"
                 src="https://htmldemo.net/bonx/bonx/assets/img/others/gaming-world2.webp"
                 alt="service__image"
               />
@@ -26,6 +27,7 @@ export default class Service extends Component {
 
             <div class="service__item item2">
               <img
+                className="ml-14"
                 src="https://htmldemo.net/bonx/bonx/assets/img/others/gaming-world2.webp"
                 alt="service__image"
               />
@@ -38,6 +40,7 @@ export default class Service extends Component {
 
             <div class="service__item item3">
               <img
+                className="ml-14"
                 src="https://htmldemo.net/bonx/bonx/assets/img/others/gaming-world2.webp"
                 alt="service__image"
               />

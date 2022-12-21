@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../../assets/css/aboutUs.css";
+import "../../assets/css/aboutUsHome.css";
 import aboutImg from "../../assets/img/about.png";
 import Button from "./Button";
 
@@ -8,7 +8,7 @@ export default class AboutUs extends Component {
     return (
       <section className="about">
         <div className="container">
-          <div id="about__content">
+          <div id="homeAbout__content">
             {/* data-wow-duration: "2s" data-wow-delay: ".2s" */}
             <div className="about__left wow">
               <img src={aboutImg} alt={aboutImg} />

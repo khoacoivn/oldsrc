@@ -1,14 +1,14 @@
 @import "../../assets/scss/color.scss";
 
-.aboutUs {
+.aboutUsPage {
     margin-bottom: 120px;
 }
 
-.aboutUs__content {
+.aboutUsPage__content {
     margin-bottom: 100px;
 }
 
-.itemAbout__left {
+.itemAboutPage__left {
     .aboutImage {
         margin-right: 40px;
         animation: fadeInUp;
@@ -21,12 +21,12 @@
     }
 }
 
-.itemAbout__right {
+.itemAboutPage__right {
     animation: fadeInUp;
     animation-duration: 1.2s;
     animation-delay: 0.2s;
 
-    #about__title {
+    #aboutPage__title {
         h5 {
             position: relative;
             font-size: 1.4rem;
@@ -58,7 +58,7 @@
         }
     }
 
-    .itemAbout__desc {
+    #aboutPage__desc {
         margin-bottom: 40px;
 
         p {

@@ -1,12 +1,12 @@
-.aboutUs {
+.aboutUsPage {
   margin-bottom: 120px;
 }
 
-.aboutUs__content {
+.aboutUsPage__content {
   margin-bottom: 100px;
 }
 
-.itemAbout__left .aboutImage {
+.itemAboutPage__left .aboutImage {
   margin-right: 40px;
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
@@ -15,12 +15,12 @@
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.itemAbout__left .aboutImage img {
+.itemAboutPage__left .aboutImage img {
   width: 100%;
   height: auto;
 }
 
-.itemAbout__right {
+.itemAboutPage__right {
   -webkit-animation: fadeInUp;
           animation: fadeInUp;
   -webkit-animation-duration: 1.2s;
@@ -28,7 +28,7 @@
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.itemAbout__right #about__title h5 {
+.itemAboutPage__right #aboutPage__title h5 {
   position: relative;
   font-size: 1.4rem;
   line-height: 32px;
@@ -37,7 +37,7 @@
   margin-bottom: 25px;
   color: rgb(176, 99, 224);
 }
-.itemAbout__right #about__title h5::after {
+.itemAboutPage__right #aboutPage__title h5::after {
   position: absolute;
   content: "";
   left: 0;
@@ -47,7 +47,7 @@
   height: 5px;
   background: rgb(176, 99, 224);
 }
-.itemAbout__right #about__title h2 {
+.itemAboutPage__right #aboutPage__title h2 {
   font-size: 3.4rem;
   line-height: 70px;
   font-weight: 700;
@@ -55,10 +55,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.itemAbout__right .itemAbout__desc {
+.itemAboutPage__right #aboutPage__desc {
   margin-bottom: 40px;
 }
-.itemAbout__right .itemAbout__desc p {
+.itemAboutPage__right #aboutPage__desc p {
   margin-bottom: 22px;
   color: rgba(255, 255, 255, 0.8);
 }
