@@ -172,46 +172,60 @@ ul.location li:first-child a:hover {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.signUp__content .content__right .form_input {
-  margin-bottom: 30px;
-}
-.signUp__content .content__right .form_input input {
-  display: inline-block;
+
+#register_username {
   width: 100%;
   height: 62px;
   padding: 0 25px;
   line-height: 17px;
-  border-radius: 10px;
+  color: #FFFFFF;
   background: inherit;
-  border: 2px solid rgba(33, 27, 54, 0.8);
+  border: 2px solid rgb(40, 30, 77);
+  border-radius: 10px;
+}
+#register_username::-moz-placeholder {
   color: #FFFFFF;
-  transition: all 1s ease 0s;
 }
-.signUp__content .content__right .form_input input:focus {
-  outline: none;
-  border-color: rgba(150, 63, 207, 0.5);
+#register_username:-ms-input-placeholder {
+  color: #FFFFFF;
 }
-.signUp__content .content__right .form_input_btn {
-  margin-bottom: 40px;
+#register_username::placeholder {
+  color: #FFFFFF;
 }
-.signUp__content .content__right .form_input_btn #signUp_Btn {
-  width: 50%;
-  height: auto;
+#register_username :focus {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  width: 100%;
+  background: inherit;
+  color: #FFFFFF;
+}
+.ant-input-affix-wrapper > input.ant-input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.ant-input-affix-wrapper > input.ant-input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.ant-input-affix-wrapper > input.ant-input::placeholder {
+  color: #FFFFFF;
+}
+
+.btn-register {
+  margin-top: 30px;
+}
+.btn-register span {
   font-size: 1.7rem;
-  text-decoration: none;
+  font-weight: 600;
 }
-.signUp__content .content__right .form_input_btn #signUp_Btn:hover {
-  text-decoration: none;
+
+#btn-register {
+  margin-top: 30px;
 }
-.signUp__content .content__right p.haveAccount {
-  margin-bottom: 0;
-  letter-spacing: 1px;
+#btn-register span {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
-.signUp__content .content__right p.haveAccount a {
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: all 0.4s ease 0s;
-}
-.signUp__content .content__right p.haveAccount a:hover {
-  color: rgba(150, 63, 207, 0.5);
+#btn-register:hover {
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=signUp.css.map */
