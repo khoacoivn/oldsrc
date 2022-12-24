@@ -12,6 +12,7 @@ import PlayerDetail from "./PlayerDetail/PlayerDetail";
 import AllGames from "./AllGames/AllGames";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactForm from "./ContactForm/ContactForm";
+import CaroGame from "./GameCaro/CaroGame";
 
 const MainRouter = () => (
   <div>
@@ -25,6 +26,7 @@ const MainRouter = () => (
       <Route path="/allGames" component={AllGames} />
       <Route path="/aboutUS" component={AboutUs} />
       <Route path="/contactForm" component={ContactForm} />
+      <Route path="/caroGame" component={CaroGame} />
     </Switch>
     <Footer />
     <MoveToTop />
