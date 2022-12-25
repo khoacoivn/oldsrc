@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "../../assets/css/Players.css";
 import ConnectUs from "../HomePages/ConnectUs";
 import LocationHeader from "../SignUp/LocationHeader";
@@ -43,26 +43,24 @@ export const players = [
   },
 ];
 
-export default class Players extends Component {
-  renderListPlayer = () => {
+export default function Players() {
+  const renderListPlayer = () => {
     return players.map((item, index) => {
       return <ItemPlayer data={item} key={index} />;
     });
   };
 
-  render() {
-    return (
-      <div>
-        <LocationHeader title={"Players"} location={"Players"} />
+  return (
+    <div>
+      <LocationHeader title={"Players"} location={"Players"} />
 
-        <div className="players__content">
-          <div className="container">
-            <div className="players__list row ">{this.renderListPlayer()}</div>
-          </div>
+      <div className="players__content">
+        <div className="container">
+          <div className="players__list row ">{renderListPlayer()}</div>
         </div>
-
-        <ConnectUs />
       </div>
-    );
-  }
+
+      <ConnectUs />
+    </div>
+  );
 }
