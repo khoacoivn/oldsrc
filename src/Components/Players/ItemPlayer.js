@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function ItemPlayer() {
-  let { name, avatar, level } = this.props.data;
+export default function ItemPlayer({ data }) {
+  let { name, avatar, level } = data;
   return (
     <div className="item__player col-lg-4 col-md-6 col-12 wow">
       {/* Item Title  */}
