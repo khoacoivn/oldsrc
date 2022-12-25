@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../assets/css/testSwiper.css";
 
@@ -41,41 +41,39 @@ const data = [
   },
 ];
 
-export default class TestSwiper extends Component {
-  render() {
-    return (
-      <>
-        {/* Swipper  */}
-        <Swiper
-          className="container testimonials__container"
-          // install Swiper modules
-          modules={[Pagination]}
-          spaceBetween={30}
-          slidesPerView={3}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-          freeMode={true}
-          loop={true}
-          autoplay={true}
-          speed={3000}
-          centeredSlides={true}
-        >
-          {data.map(({ avatar, name, review }, index) => {
-            return (
-              <SwiperSlide key={index} className="testimonials">
-                <div className="client__avatar">
-                  <img src={avatar} alt="" />
-                </div>
-                <h5 className="client__name">{name}</h5>
-                <small className="client_review">{review}</small>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </>
-    );
-  }
+export default function TestSwiper() {
+  return (
+    <>
+      {/* Swipper  */}
+      <Swiper
+        className="container testimonials__container"
+        // install Swiper modules
+        modules={[Pagination]}
+        spaceBetween={30}
+        slidesPerView={3}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+        freeMode={true}
+        loop={true}
+        autoplay={true}
+        speed={3000}
+        centeredSlides={true}
+      >
+        {data.map(({ avatar, name, review }, index) => {
+          return (
+            <SwiperSlide key={index} className="testimonials">
+              <div className="client__avatar">
+                <img src={avatar} alt="" />
+              </div>
+              <h5 className="client__name">{name}</h5>
+              <small className="client_review">{review}</small>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
+  );
 }

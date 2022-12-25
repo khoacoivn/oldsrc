@@ -27,27 +27,6 @@ export default function SignIn() {
               <h2>Sign In</h2>
             </div>
 
-            {/* form input  */}
-            {/* <div className="form_input">
-                <input name="signIn_email" placeholder="Email" type="email" />
-              </div>
-              <div className="form_input">
-                <input
-                  name="signIn_password"
-                  placeholder="Password"
-                  type="password"
-                />
-              </div>
-              <div className="form_input_btn text-center">
-                <Button value={"Sign In"} id={"signIn_Btn"} />
-              </div>
-              <p className="dontHaveAccount text-center">
-                Dont't have any account,
-                <NavLink to="/signup">
-                  <a href="#"> Sign up here</a>
-                </NavLink>
-              </p> */}
-
             <Form
               layout="vertical"
               name="basic"

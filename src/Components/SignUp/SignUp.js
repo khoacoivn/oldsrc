@@ -71,36 +71,6 @@ export default function SignUp() {
             <div className="section_title text-center">
               <h2>Signup</h2>
             </div>
-            {/*
-              <div className="form_input">
-                <input name="signup_name" placeholder="Name" type="text" />
-              </div>
-              <div className="form_input">
-                <input name="signup_email" placeholder="Email" type="email" />
-              </div>
-              <div className="form_input">
-                <input
-                  name="signup_password"
-                  placeholder="Password"
-                  type="password"
-                />
-              </div>
-              <div className="form_input">
-                <input
-                  name="signup_password"
-                  placeholder="Retype Password"
-                  type="password"
-                />
-              </div>
-              <div className="form_input_btn text-center">
-                <Button value={"Sign Up"} id={"signUp_Btn"} />
-              </div>
-              <p className="haveAccount text-center">
-                Already have account,
-                <NavLink to="/signin">
-                  <a href="#"> Login here</a>
-                </NavLink>
-              </p> */}
 
             {/* form input */}
             <Form
