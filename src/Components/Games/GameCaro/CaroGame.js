@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { calculateAITurn } from "./AIGame";
-import "../../assets/css/caroGame.css";
+import "../../../assets/css/caroGame.css";
 
 const GAME_STATE = {
   PLAYER_TURN: "player_turn",

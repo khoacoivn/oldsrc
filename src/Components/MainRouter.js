@@ -12,7 +12,12 @@ import PlayerDetail from "./PlayerDetail/PlayerDetail";
 import AllGames from "./AllGames/AllGames";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactForm from "./ContactForm/ContactForm";
-import CaroGame from "./GameCaro/CaroGame";
+import CaroGame from "./Games/GameCaro/CaroGame";
+import ColorBlast from "./Games/GameColorBlast/ColorBlastGame";
+import Coloron from "./Games/GameColoron/ColoronGame";
+import Menja from "./Games/GameMenja/MenjaGame";
+import SNAKE from "./Games/GameSnake/SnakeGame";
+import TwoGame from "./Games/GameTwo048/TwoGame";
 
 const MainRouter = () => (
   <div>
@@ -26,7 +31,13 @@ const MainRouter = () => (
       <Route path="/allGames" component={AllGames} />
       <Route path="/aboutUS" component={AboutUs} />
       <Route path="/contactForm" component={ContactForm} />
+      {/* GAMES  */}
       <Route path="/caroGame" component={CaroGame} />
+      <Route path="/colorBlastGame" component={ColorBlast} />
+      <Route path="/coloronGame" component={Coloron} />
+      <Route path="/menjaGame" component={Menja} />
+      <Route path="/snakeGame" component={SNAKE} />
+      <Route path="/twoGame" component={TwoGame} />
     </Switch>
     <Footer />
     <MoveToTop />
