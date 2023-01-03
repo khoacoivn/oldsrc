@@ -162,36 +162,68 @@ ul.sub_menu .sub__pages a:hover {
   border-color: rgba(177, 84, 240, 0.5);
 }
 
-.ant-input-affix-wrapper {
+.ant-form-item-control-input-content .ant-input {
+  background-color: inherit;
+  color: #FFFFFF;
   width: 100%;
-  height: 62px;
+  font-size: 1rem;
+  line-height: 17px;
+  border: 2px solid rgb(40, 30, 77);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.ant-form-item-control-input-content .ant-input::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-form-item-control-input-content .ant-input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-form-item-control-input-content .ant-input::placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.ant-form-item-control-input-content .ant-input:hover {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+.ant-form-item-control-input-content .ant-input:focus {
+  border-color: rgba(177, 84, 240, 0.5);
+}
+.ant-form-item-control-input-content .ant-input-password {
+  width: 100%;
   padding: 0 25px;
+  font-size: 1rem;
   line-height: 17px;
   background: inherit;
   border: 2px solid rgb(40, 30, 77);
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
-.ant-input-affix-wrapper:hover {
+.ant-form-item-control-input-content .ant-input-password:hover {
   border-color: rgba(177, 84, 240, 0.5);
 }
-.ant-input-affix-wrapper:focus {
+.ant-form-item-control-input-content .ant-input-password:focus {
   border-color: rgba(177, 84, 240, 0.5);
 }
-.ant-input-affix-wrapper #basic_password {
+.ant-form-item-control-input-content .ant-input-password #basic_password {
   background: inherit;
   color: #FFFFFF;
 }
-.ant-input-affix-wrapper #basic_password::-moz-placeholder {
+.ant-form-item-control-input-content .ant-input-password #basic_password::-moz-placeholder {
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 500;
 }
-.ant-input-affix-wrapper #basic_password:-ms-input-placeholder {
+.ant-form-item-control-input-content .ant-input-password #basic_password:-ms-input-placeholder {
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 500;
 }
-.ant-input-affix-wrapper #basic_password::placeholder {
+.ant-form-item-control-input-content .ant-input-password #basic_password::placeholder {
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 500;

@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop>
-          <MainRouter />
-        </ScrollToTop>
+        {/* <ScrollToTop> */}
+        <MainRouter />
+        {/* </ScrollToTop> */}
       </BrowserRouter>
     </div>
   );

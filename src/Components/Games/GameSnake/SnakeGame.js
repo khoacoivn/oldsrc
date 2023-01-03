@@ -412,7 +412,8 @@ export default class SNAKE extends Component {
 
   render() {
     return (
-      <div className="container noselect mt-52 mb-14">
+      //  mb-14
+      <div className="container noselect pt-40">
         <div id="author" className="mb-3">
           <h1>SNAKE</h1>
         </div>

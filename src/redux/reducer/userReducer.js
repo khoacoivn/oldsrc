@@ -1,6 +1,7 @@
+import { userLocalService } from "../../service/localService";
 import { SET_USER_LOGIN } from "../constant/userConstant";
 
-const initialState = { user: null };
+const initialState = { user: userLocalService.get() };
 
 export const userReducer = (state = initialState, { type, payload }) => {
   switch (type) {

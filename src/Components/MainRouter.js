@@ -1,10 +1,7 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Switch, Route, Routes } from "react-router-dom";
 
-import Header from "./HomePages/Header";
 import HomePage from "./HomePage";
-import Footer from "./HomePages/Footer";
-import MoveToTop from "./HomePages/MoveToTop";
 import SignUp from "./SignUp/SignUp";
 import SignIn from "./SignIn/SignIn";
 import Players from "./Players/Players";
@@ -18,30 +15,85 @@ import Coloron from "./Games/GameColoron/ColoronGame";
 import Menja from "./Games/GameMenja/MenjaGame";
 import SNAKE from "./Games/GameSnake/SnakeGame";
 import TwoGame from "./Games/GameTwo048/TwoGame";
+import Layout from "../HOC/Layout";
 
 const MainRouter = () => (
-  <div>
-    <Header />
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/signup" component={SignUp} />
-      <Route path="/signin" component={SignIn} />
-      <Route path="/players" component={Players} />
-      <Route path="/playerDetail" component={PlayerDetail} />
-      <Route path="/allGames" component={AllGames} />
-      <Route path="/aboutUS" component={AboutUs} />
-      <Route path="/contactForm" component={ContactForm} />
+  <>
+    <Routes>
+      <Route
+        exact
+        path="/"
+        element={
+          <Layout>
+            <HomePage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/signup"
+        element={
+          <Layout>
+            <SignUp />
+          </Layout>
+        }
+      />
+      <Route
+        path="/signin"
+        element={
+          <Layout>
+            <SignIn />
+          </Layout>
+        }
+      />
+      <Route
+        path="/players"
+        element={
+          <Layout>
+            <Players />
+          </Layout>
+        }
+      />
+      <Route
+        path="/playerDetail"
+        element={
+          <Layout>
+            <PlayerDetail />
+          </Layout>
+        }
+      />
+      <Route
+        path="/allGames"
+        element={
+          <Layout>
+            <AllGames />
+          </Layout>
+        }
+      />
+      <Route
+        path="/aboutUS"
+        element={
+          <Layout>
+            <AboutUs />
+          </Layout>
+        }
+      />
+      <Route
+        path="/contactForm"
+        element={
+          <Layout>
+            <ContactForm />
+          </Layout>
+        }
+      />
       {/* GAMES  */}
-      <Route path="/caroGame" component={CaroGame} />
-      <Route path="/colorBlastGame" component={ColorBlast} />
-      <Route path="/coloronGame" component={Coloron} />
-      <Route path="/menjaGame" component={Menja} />
-      <Route path="/snakeGame" component={SNAKE} />
-      <Route path="/twoGame" component={TwoGame} />
-    </Switch>
-    <Footer />
-    <MoveToTop />
-  </div>
+      <Route path="/caroGame" element={<CaroGame />} />
+      <Route path="/colorBlastGame" element={<ColorBlast />} />
+      <Route path="/coloronGame" element={<Coloron />} />
+      <Route path="/menjaGame" element={<Menja />} />
+      <Route path="/snakeGame" element={<SNAKE />} />
+      <Route path="/twoGame" element={<TwoGame />} />
+    </Routes>
+  </>
 );
 
 export default MainRouter;
