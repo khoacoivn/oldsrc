@@ -16,6 +16,7 @@ import Menja from "./Games/GameMenja/MenjaGame";
 import SNAKE from "./Games/GameSnake/SnakeGame";
 import TwoGame from "./Games/GameTwo048/TwoGame";
 import Layout from "../HOC/Layout";
+import NotFoundPage from "./NotFoundPage/NotFoundPage";
 
 const MainRouter = () => (
   <>
@@ -92,6 +93,7 @@ const MainRouter = () => (
       <Route path="/menjaGame" element={<Menja />} />
       <Route path="/snakeGame" element={<SNAKE />} />
       <Route path="/twoGame" element={<TwoGame />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </>
 );

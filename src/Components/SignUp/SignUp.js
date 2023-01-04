@@ -1,10 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../../assets/css/signUp.css";
 import signUpImage from "../../assets/img/signUp.webp";
 import { Button, Form, Input } from "antd";
 import Lottie from "lottie-react";
 import bg_signUp from "../../assets/img/45740-gaming-community.json";
+import { useDispatch } from "react-redux";
+import { setUserLogUpActionService } from "../../redux/action/userAction";
 
 const formItemLayout = {
   labelCol: {
@@ -39,8 +41,17 @@ const tailFormItemLayout = {
 
 export default function SignUp() {
   const [form] = Form.useForm();
+  let navigate = useNavigate();
+  let dispatch = useDispatch();
+
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
+    const handleNavigate = () => {
+      setTimeout(() => {
+        navigate("/signin");
+      }, 1000);
+    };
+    dispatch(setUserLogUpActionService(values, handleNavigate));
   };
 
   return (

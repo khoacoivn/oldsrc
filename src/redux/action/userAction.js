@@ -1,7 +1,7 @@
 import { message } from "antd";
 import { userLocalService } from "../../service/localService";
-import { postLogin } from "../../service/userService";
-import { SET_USER_LOGIN } from "../constant/userConstant";
+import { postLogin, postRegister } from "../../service/userService";
+import { SET_USER_LOGIN, SET_USER_LOGUP } from "../constant/userConstant";
 
 export const setUserActionService = (values, onSuccess) => {
   return (dispatch) => {
@@ -19,6 +19,24 @@ export const setUserActionService = (values, onSuccess) => {
       })
       .catch((err) => {
         message.error("Failed login");
+      });
+  };
+};
+
+export const setUserLogUpActionService = (values, onSuccess) => {
+  return (dispatch) => {
+    postRegister(values)
+      .then((res) => {
+        message.success("Successfully register");
+
+        dispatch({
+          type: SET_USER_LOGUP,
+          payload: res.data.content,
+        });
+        onSuccess();
+      })
+      .catch((err) => {
+        message.error("Failed register");
       });
   };
 };
