@@ -31,7 +31,6 @@ export const setUserLogUpActionService = (values, onSuccess) => {
 
         dispatch({
           type: SET_USER_LOGUP,
-          payload: res.data.content,
         });
         onSuccess();
       })

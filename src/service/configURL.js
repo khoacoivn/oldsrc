@@ -4,6 +4,7 @@ const TOKEN_CYBERSOFT =
 
 export const https = axios.create({
   baseURL: "https://movienew.cybersoft.edu.vn",
+  // baseURL: "http://localhost:5000",
   headers: {
     TokenCybersoft: TOKEN_CYBERSOFT,
   },

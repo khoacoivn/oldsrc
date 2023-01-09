@@ -46,12 +46,12 @@ export default function SignUp() {
 
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
-    const handleNavigate = () => {
+    const handleSignUpNavigate = () => {
       setTimeout(() => {
         navigate("/signin");
       }, 1000);
     };
-    dispatch(setUserLogUpActionService(values, handleNavigate));
+    dispatch(setUserLogUpActionService(values, handleSignUpNavigate));
   };
 
   return (
