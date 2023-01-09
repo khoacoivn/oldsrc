@@ -1,17 +1,34 @@
 import React from "react";
-// import Button from "../HomePages/Button";
 import "../../assets/css/SignIn.css";
 import signInImage from "../../assets/img/signUp.webp";
 import LocationHeader from "../SignUp/LocationHeader";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input, message } from "antd";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setUserActionService } from "../../redux/action/userAction";
+import { postLogin } from "../../service/userService";
+import { userLocalService } from "../../service/localService";
+import Lottie from "lottie-react";
+import bg_signIn from "../../assets/img/75126-gaming-console.json";
 
 export default function SignIn() {
-  const onFinish = (values) => {
-    console.log("Success:", values);
+  let navigate = useNavigate();
+  let dispatch = useDispatch();
+
+  const onFinishReduxThunk = (values) => {
+    const handleNavigate = () => {
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
+    };
+
+    dispatch(setUserActionService(values, handleNavigate));
   };
+
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
+
   return (
     <div className="signIn">
       <LocationHeader title={"Sign In"} location={"Pages"} />
@@ -19,7 +36,8 @@ export default function SignIn() {
       <div className="container">
         <div className="signIn__content row justify-content-between align-items-center">
           <div className="content__left col-lg-6 col-md-8 col-12 mx-auto mb-50">
-            <img src={signInImage} alt="" />
+            {/* <img src={signInImage} alt="" /> */}
+            <Lottie animationData={bg_signIn} loop={true} />
           </div>
 
           <div className="content__right col-lg-5 col-md-8 col-12 mx-auto mb-50">
@@ -39,12 +57,12 @@ export default function SignIn() {
               initialValues={{
                 remember: true,
               }}
-              onFinish={onFinish}
+              onFinish={onFinishReduxThunk}
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
               <Form.Item
-                name="username"
+                name="taiKhoan"
                 rules={[
                   {
                     required: true,
@@ -52,11 +70,11 @@ export default function SignIn() {
                   },
                 ]}
               >
-                <Input placeholder="Username" className="p-3" />
+                <Input placeholder="Username" className="p-3 h-16" />
               </Form.Item>
 
               <Form.Item
-                name="password"
+                name="matKhau"
                 rules={[
                   {
                     required: true,
@@ -64,7 +82,7 @@ export default function SignIn() {
                   },
                 ]}
               >
-                <Input.Password placeholder="Password" className="p-3" />
+                <Input.Password placeholder="Password" className="p-3 h-16" />
               </Form.Item>
 
               <Form.Item

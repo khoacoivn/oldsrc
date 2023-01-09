@@ -10,4 +10,11 @@ export const userLocalService = {
       return null;
     }
   },
+  set: (userData) => {
+    let userJson = JSON.stringify(userData);
+    localStorage.setItem(USER_LOCAL, userJson);
+  },
+  remove: () => {
+    localStorage.removeItem(USER_LOCAL);
+  },
 };
